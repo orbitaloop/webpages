@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de test — Webpages</title>
+  <meta name="description" content="Page de test pour vérifier le bon fonctionnement de GitHub Pages.">
+  <link rel="canonical" href="https://orbitaloop.github.io/webpages/pages/test.html">
+  <style>
+    :root {
+      --bg: #0a1628;
+      --fg: #e8eef5;
+      --muted: #8fa3bd;
+      --accent: #d4af37;
+      --card: #122236;
+      --success: #4ade80;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .back {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back:hover { text-decoration: underline; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      color: var(--success);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin: 2rem 0 1rem;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--success);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+    .card p {
+      margin: 0;
+      color: var(--fg);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .info-item {
+      background: rgba(255,255,255,0.03);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .info-item .label {
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+    .info-item .value {
+      color: var(--fg);
+      font-family: ui-monospace, monospace;
+    }
+    @media (max-width: 480px) {
+      .info-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back">← Retour à l'accueil</a>
+
+    <div class="badge">
+      <span class="dot"></span>
+      Page en ligne
+    </div>
+
+    <h1>Test réussi</h1>
+    <p class="lead">Si tu vois cette page, GitHub Pages est correctement configuré et tes futures pages seront indexables par les moteurs de recherche.</p>
+
+    <div class="card">
+      <h2>Statut technique</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="label">Hébergement</div>
+          <div class="value">GitHub Pages</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Protocole</div>
+          <div class="value">HTTPS</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Sitemap</div>
+          <div class="value">Actif</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Robots</div>
+          <div class="value">Indexable</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Et après ?</h2>
+      <p>Demande à Claude d'ajouter de nouvelles pages — elles seront automatiquement référencées dans le sitemap et listées sur la page d'accueil.</p>
+    </div>
+  </div>
+</body>
+</html>
