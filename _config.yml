@@ -1,0 +1,18 @@
+# GitHub Pages config
+title: Webpages
+description: Pages publiées par Samuel Michelot
+url: https://orbitaloop.github.io
+baseurl: /webpages
+
+# SEO
+lang: fr
+author: Samuel Michelot
+
+# Build
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - README.md
